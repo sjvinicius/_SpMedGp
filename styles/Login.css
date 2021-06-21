@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sofia&family=Timmana&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    
+    /*Cores*/
+    
+    --rosaEscuro: #D80032;
+    --branco:#EDF2F4;
+    --roxo:#8C30FC;
+    --cinza:#2B2D42;
+    --rosaClaro:#EF233C;
+
+    /*Fontes*/
+    --Sofia: 'Sofia', sans-serif;
+    --Roboto:'Roboto', sans-serif;;
+    --Timanna:'Timmana', sans-serif;
+
+}
+
+.backgroundLogin{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #EF233C;
+    background-color: var(--rosaClaro);
+    font-family: var(--Timanna);
+    text-align: center;
+    /* flex-direction: column; */
+
+}
+
+.contentLogin {
+
+    display: flex   ;
+
+}
+
+.aboutusLogin{
+
+    background-color: var(--branco);
+    width: 820px;
+    height: 550px;
+    border-radius: 70px;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+
+}
+
+.aboutusInfo{
+
+    /* background-color: yellow; */
+    width: 230px;
+    height: 500px;
+    border-radius: 50px;
+    border: 1px var(--roxo) solid;
+    margin: 0 2rem;
+    font-family: var(--Sofia);
+    /* justify-content: center;
+    display: flex;
+    flex-direction: column; */
+    align-items: center;
+
+}
+
+.aboutusInfo img{
+
+    width: 120px;
+    height: 120px;
+    /* padding-top: 1rem; */
+
+}
+
+.aboutusInfo img:nth-child(1){
+
+    padding-top: 1rem;
+
+}
+
+.aboutusInfo h2 {
+
+    font-family: var(--Timanna);
+    margin: 1rem;
+
+}
+
+.aboutusInfo:nth-child(2){
+
+    /* background-color: var(--roxo); */
+    padding: 5rem 0;
+
+}
+
+.loginLogin{
+
+    background-color: var(--branco);
+    width: 250px;
+    height: 550px;
+    border-radius: 70px;
+    margin-right: 120px;
+    margin-left: 20px;
+
+}
+
+.areaLogin{
+
+    /* background-color: var(--roxo); */
+    width: 250px;
+    height: 550px;
+    border-radius: 70px;
+    padding-top: 4rem;
+
+}
+
+.areaLogin img {
+
+    width: 250px;
+    padding-bottom: 2rem;
+
+}
+
+.formLogin{
+
+    /* background-color: yellow; */
+    width: 250px;
+    height: 20  0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formLogin .inputLogin{
+
+    width: 200px;
+    height: 45px;
+    margin: 1rem 0;
+    border-radius: 50px;
+    border: 2px var(--roxo) solid;
+    font-family: var(--Timanna);
+    padding-top: 5px;
+    padding-left: 1rem;
+    font-size: 20px;
+
+}
+
+.formLogin .inputLogin::placeholder{
+
+    /* background-color: var(--rosaEscuro); */
+    color: var(--cinza);
+    width: 200px;
+    height: 30px;
+
+}
+
+.formLogin .botaoLogin{
+
+    background-color: var(--roxo);
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 25px;
+    font-family: var(--Timanna);
+    color: var(--branco);    
+    border-radius: 20px;
+}
