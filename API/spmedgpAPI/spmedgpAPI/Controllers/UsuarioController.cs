@@ -45,7 +45,7 @@ namespace spmedgpAPI.Controllers
 
         }
 
-        [HttpGet("{email}")]
+        [HttpGet("email")]
         public IActionResult BuscarEmail(string email)
         {
 

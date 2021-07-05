@@ -1,4 +1,5 @@
-﻿using spmedgpAPI.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using spmedgpAPI.Contexts;
 using spmedgpAPI.Domains;
 using spmedgpAPI.Interfaces;
 using System;
@@ -61,7 +62,7 @@ namespace spmedgpAPI.Repositories
 
         public Consultum BuscarConsultaId(int id)
         {
-        
+            
             return ctx.Consulta.FirstOrDefault(consultabuscada => consultabuscada.IdConsulta == id);
         
         }
@@ -86,7 +87,22 @@ namespace spmedgpAPI.Repositories
 
         public List<Consultum> ListarConsultas()
         {
-            return ctx.Consulta.ToList();
+            return ctx.Consulta
+                .Include(e => e.IdMedicoNavigation.IdEspecialidadeNavigation)
+                .Include(e => e.IdUsuarioNavigation)
+                .ToList();
+        }
+
+        public List<Consultum> ListarConsultasdoUsuario(int id)
+        {
+            return ctx.Consulta
+                //.Include(c => c.Datacon)
+                //.Include(c => c.IdClinicaNavigation.NomeFantasia)
+                //.Include(c => c.IdMedicoNavigation.Nome)
+                //.Include(c => c.IdSituacaoNavigation.TituloSituacao)
+                .Include(c => c.RelatorioMedico)
+                .Where(c => c.IdUsuario == id)
+                .ToList();
         }
     }
 }

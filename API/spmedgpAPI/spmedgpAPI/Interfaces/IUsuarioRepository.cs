@@ -23,6 +23,8 @@ namespace spmedgpAPI.Interfaces
 
         Usuario BuscarUsuarioEmail(string email);
 
+        Usuario AuthUsuario(string email, string senha);
+
         //Update
 
         void AtualizarUsuarioId(int id, Usuario usuarioAtt);

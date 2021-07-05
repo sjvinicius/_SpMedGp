@@ -21,6 +21,8 @@ namespace spmedgpAPI.Interfaces
 
         Consultum BuscarConsultaId(int id);
 
+        List<Consultum> ListarConsultasdoUsuario(int id);
+
 
         //Update
 

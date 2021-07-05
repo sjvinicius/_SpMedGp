@@ -59,3 +59,11 @@ C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º S
 C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\obj\Debug\net5.0\ref\spmedgpAPI.dll
 C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\obj\Debug\net5.0\spmedgpAPI.pdb
 C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\obj\Debug\net5.0\spmedgpAPI.genruntimeconfig.cache
+C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\bin\Debug\net5.0\spmedgpAPI.xml
+C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\obj\Debug\net5.0\spmedgpAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\obj\Debug\net5.0\spmedgpAPI.xml
+C:\Users\vinyl\OneDrive\Documentos\Curso Desenvolvimento de Sistemas SENAI\2º Semestre\_SP_Medical_Group\API\spmedgpAPI\spmedgpAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

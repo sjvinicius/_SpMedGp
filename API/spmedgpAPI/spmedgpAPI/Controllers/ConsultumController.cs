@@ -5,6 +5,7 @@ using spmedgpAPI.Interfaces;
 using spmedgpAPI.Repositories;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -114,6 +115,23 @@ namespace spmedgpAPI.Controllers
             {
 
                 return BadRequest(ex);
+            }
+
+        }
+
+        [HttpGet("User")]
+        public IActionResult ListConsultasUsers(int id)
+        {
+            try
+            {
+                int idusuario = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
+
+                return Ok(_consultumRepository.ListarConsultasdoUsuario(idusuario));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            
             }
 
         }

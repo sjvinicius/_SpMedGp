@@ -84,6 +84,13 @@ namespace spmedgpAPI.Repositories
 
         }
 
+        public Usuario AuthUsuario(string email, string senha)
+        {
+            
+            return ctx.Usuarios.FirstOrDefault(usuarioBuscado => usuarioBuscado.Email == email && usuarioBuscado.Senha == senha);
+
+        }
+
         public Usuario BuscarUsuarioEmail(string email)
         {
 
