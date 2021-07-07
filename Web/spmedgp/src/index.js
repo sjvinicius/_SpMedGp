@@ -1,18 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Consultas from './Pages/Consultas/index'
 import reportWebVitals from './reportWebVitals';
-
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
+
+import './index.css';
+
 import Login from './Pages/Login';
+import Consultas from './Pages/Consultas'
+import NovaConsulta from './Pages/NovaConsulta';
 
 const route = (
 
   <BrowserRouter initialRouteName='Login' >
     <Switch >
-      <Route name='Login' component={Login}/>
-      <Route name='Consultas' component={Consultas}/>
+      <Route exact path='/' component={Login}/>
+      <Route path='/Login' component={Login}/>
+      <Route path='/Consultas' component={Consultas}/>
+      <Route path='/NovaConsulta' component={NovaConsulta}/>
+      {/* <Redirect to path='/NotFound' component={''}/> */}
     </Switch>
   </BrowserRouter>
 

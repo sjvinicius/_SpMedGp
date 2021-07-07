@@ -119,7 +119,7 @@ namespace spmedgpAPI.Controllers
 
         }
 
-        [HttpGet("User")]
+        [HttpGet("minhas")]
         public IActionResult ListConsultasUsers(int id)
         {
             try

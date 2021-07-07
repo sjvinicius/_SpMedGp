@@ -33,6 +33,7 @@ export const NavItem = styled.a`
   margin-right: 30px;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 `;
 
 export const Action = styled.div`

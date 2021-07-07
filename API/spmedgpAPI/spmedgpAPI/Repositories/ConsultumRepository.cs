@@ -96,10 +96,10 @@ namespace spmedgpAPI.Repositories
         public List<Consultum> ListarConsultasdoUsuario(int id)
         {
             return ctx.Consulta
-                //.Include(c => c.Datacon)
-                //.Include(c => c.IdClinicaNavigation.NomeFantasia)
-                //.Include(c => c.IdMedicoNavigation.Nome)
-                //.Include(c => c.IdSituacaoNavigation.TituloSituacao)
+                .Include(c => c.Datacon)
+                .Include(c => c.IdClinicaNavigation.NomeFantasia)
+                .Include(c => c.IdMedicoNavigation.Nome)
+                .Include(c => c.IdSituacaoNavigation.TituloSituacao)
                 .Include(c => c.RelatorioMedico)
                 .Where(c => c.IdUsuario == id)
                 .ToList();

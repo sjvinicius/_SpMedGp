@@ -51,8 +51,14 @@ export const InputLog = styled.input`
     padding-left: 15px;
     border-radius: 20px;
 `;
+
+export const ErroMsg = styled.p`
+    color: red;
+    font-size: 16px;
+    text-align: center;
+`;
  
-export const ButtonLog = styled.button`
+export const ButtonLog = styled.input`
     width: 250px;
     height: 50px;
     border: 1px solid #FFF;

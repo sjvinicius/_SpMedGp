@@ -10,13 +10,14 @@ export const Wrapper = styled.div`
   
 `;
 
-export const Lista = styled.div`
+export const Lista = styled.ul`
   background-color: #FFF;
   width: 1000px;
   height: 90vh;
   margin: auto;
   border-radius: 20px;
   border: 2px solid #8C30FC;
+  overflow: auto;
 `;
 
 export const BackConsult =  styled.div`

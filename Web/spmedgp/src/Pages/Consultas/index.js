@@ -1,4 +1,3 @@
-
 import React, {useEffect, useState} from 'react'
 import api from '../../services/api'
 
@@ -15,7 +14,10 @@ export default function Consultas(){
     async function BuscarCons() {
         
         const resposta = await api('/consultum')
-        const data = await resposta.data
+        const data = resposta.data
+        
+        console.log(data);
+        
         setListaCons(data)
     }
     
@@ -32,11 +34,11 @@ export default function Consultas(){
                 <Header />
                     <Wrapper>
                         
-                        <Lista>
+                    <Lista>
                             { 
                                 listaCons.map( consulta => (
-
-                                    <BackConsult>
+                                    <li key={consulta.datacon}>
+                                        <BackConsult>
                                             <Consult>
                                                 <TopConsult>
                                                     <InfoMed>
@@ -48,11 +50,11 @@ export default function Consultas(){
                                                     <Tittle>{Intl.DateTimeFormat('pt-BR').format(new Date(consulta.datacon))}</Tittle>
                                                 </TopConsult>
                                                 <BodyConsult>
-                                                    <Desc>{consulta.relatorioMedico}</Desc>
+                                                    <Desc> {consulta.relatorioMedico} </Desc>
                                                 </BodyConsult>
                                             </Consult>
                                         </BackConsult>
-                        
+                                    </li>
                                     )
                                 )
                             }
