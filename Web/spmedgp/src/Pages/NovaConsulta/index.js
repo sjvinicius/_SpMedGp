@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import { useHistory } from 'react-router-dom';
 
 import Footer from '../../Components/Footer'
 import Header from '../../Components/Header'
@@ -13,6 +14,8 @@ export default function NovaConsulta() {
     const {register, handleSubmit} = useForm();
 
     const emailuser = tokenDecode().Email
+
+    const history = useHistory();
 
     function Agendar(data) {
 
@@ -28,6 +31,9 @@ export default function NovaConsulta() {
             datacon: data.data
 
         })
+
+        history.push('/Consultas')
+
     }
 
     return(
@@ -55,7 +61,7 @@ export default function NovaConsulta() {
                                 <option value='3'>Tatuapé</option>
                             </Select>
                             <TittleInput>Data do Agendamento</TittleInput>
-                            <Date type='datetime-local' {...register('data')} />
+                            <Date type='date' {...register('data')} />
                             <FooterButtons>
                                 <Cancel>Cancel</Cancel>
                                 <Schedule type='submit' value='Agendar'/>

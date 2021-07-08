@@ -29,7 +29,7 @@ namespace spmedgpAPI.Repositories
             if (consultaAtt.IdMedico != null)
             {
 
-                buscarConsulta.IdMedico= consultaAtt.IdMedico;
+                buscarConsulta.IdMedico = consultaAtt.IdMedico;
 
             }
 
@@ -95,12 +95,13 @@ namespace spmedgpAPI.Repositories
 
         public List<Consultum> ListarConsultasdoUsuario(int id)
         {
+
+
             return ctx.Consulta
-                .Include(c => c.Datacon)
-                .Include(c => c.IdClinicaNavigation.NomeFantasia)
-                .Include(c => c.IdMedicoNavigation.Nome)
-                .Include(c => c.IdSituacaoNavigation.TituloSituacao)
-                .Include(c => c.RelatorioMedico)
+                .Include(c => c.IdClinicaNavigation)
+                .Include(c => c.IdMedicoNavigation.IdEspecialidadeNavigation)
+                .Include(c => c.IdSituacaoNavigation)
+                .Include(c => c.IdUsuarioNavigation.IdTipoUsuarioNavigation)
                 .Where(c => c.IdUsuario == id)
                 .ToList();
         }

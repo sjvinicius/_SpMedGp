@@ -76,3 +76,16 @@ export const Desc = styled.p`
   font-size: 14px;
 `;
 
+export const InputDesc = styled.input`
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+`;
+
+export const InputDescNone = styled.input`
+  display:none;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+`;
+
